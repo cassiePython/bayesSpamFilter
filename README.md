@@ -250,7 +250,3 @@ print("Accuracy of HAM:", evaluate(test_dataset_ham, 1))
 - 我们发现现在的方法中在求解P(B|A)和P(B|¬A)时依赖于大量的浮点数乘法，我们可以使用log函数将其转化为加法操作；
 - 实际上我们使用的求解P(B|A)和P(B|¬A)的策率是bag-of-word模型，这个效果不太好，可以通过使用TF-IDF等进行改进；
 - N-Grams技术：考虑N个连续单词的集合，并用该集合来计算概率。比如：bad和not bad表示的其实是不同的含义；
-
-最后，欢迎关注我的公众号：
-
-![](https://github.com/cassiePython/bayesSpamFilter/blob/master/QRcode.jpg)
